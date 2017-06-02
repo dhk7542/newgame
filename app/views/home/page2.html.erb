@@ -1,0 +1,22 @@
+<section>
+    <article class="bonus">
+            <div class="container">
+            <h1><%= @donghoon %>를 선택한 당신! </h1>
+            <p>여러명소 중 4가지가 나옵니다.</p>
+            <div class="img" id="do">
+                <img src="<%= @car1 %>">
+            </div>
+            
+            <p>이번 기회에</p>
+                <div class="adam">
+                    <h1>
+                    <% @car.each do |c|%>
+                    <%= c %>, 
+                    <% end %>
+                    </h1>
+                </div>
+                
+            <p>위 4곳에 놀러가보는게 어떨까요!</p>
+        </div>
+    </article>
+</section>
